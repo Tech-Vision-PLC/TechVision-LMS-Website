@@ -138,7 +138,7 @@ export function Hero() {
           </Link>
 
           <Link
-            href="https://learn.techvision.edu.et/batch-application/new"
+            href="/student-application"
             className="group flex items-center justify-center gap-3 rounded-xl border border-white/10 bg-white/[0.04] px-8 py-4 font-semibold text-white backdrop-blur-xl transition-all duration-300 hover:border-[#00C853]/40 hover:bg-white/[0.08]"
           >
             <span className="flex h-7 w-7 items-center justify-center rounded-full border border-[#00C853]/30 bg-[#00C853]/20">

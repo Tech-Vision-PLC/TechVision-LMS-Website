@@ -59,7 +59,7 @@ export function Navbar({ hideCourses = false }: { hideCourses?: boolean }) {
           </a>
 
           <Link
-            href="https://learn.techvision.edu.et/batch-application/new"
+            href="/student-application"
             className=" bg-[#00d38d] px-5 py-2.5 text-[11px] font-bold uppercase tracking-[.11em] text-[#002333] transition hover:bg-[#00bf80]"
           >
             Apply Now
@@ -135,7 +135,7 @@ export function Navbar({ hideCourses = false }: { hideCourses?: boolean }) {
             </Link>
 
             <Link
-              href="https://learn.techvision.edu.et/batch-application/new"
+              href="/student-application"
               onClick={() => setMobile(false)}
               className="w-fit rounded-md bg-[#00d38d] px-5 py-2.5 font-bold text-[#002333]"
             >

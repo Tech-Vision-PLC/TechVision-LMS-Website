@@ -32,7 +32,7 @@ const plans = [
       "Max 20 students per batch",
     ],
     cta: "APPLY NOW",
-    href: "https://learn.techvision.edu.et/batch-application/new",
+    href: "/student-application",
     popular: true,
     soon:false,
   },
@@ -155,7 +155,7 @@ export default function PricingPage() {
             Limited to 20 students per batch. Secure your spot now.
           </p>
           <Link
-            href="https://learn.techvision.edu.et/batch-application/new"
+            href="/student-application"
             className="tv-mono mt-8 inline-block bg-[#00d38d] px-8 py-4 text-xs font-bold"
           >
             APPLY FOR NEXT BATCH

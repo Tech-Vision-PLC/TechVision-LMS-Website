@@ -50,7 +50,7 @@ export function LandingHero() {
             Start Learning <ArrowRight size={16} />
           </Link>
           <Link
-            href="https://learn.techvision.edu.et/batch-application/new"
+            href="/student-application"
             className="flex min-w-48 items-center justify-center gap-2 border border-[#69736d] px-7 py-4 text-sm font-semibold transition-transform duration-200 hover:-translate-y-0.5"
           >
             <Play size={15} className="text-[#00d38d]" /> Apply For Next Batch

@@ -108,7 +108,7 @@ export function Cta() {
                   </Link>
 
                   <Link
-                    href="https://learn.techvision.edu.et/batch-application/new"
+                    href="/student-application"
                     className="group flex items-center justify-center gap-2.5 bg-white/[0.04] border border-white/[0.12] hover:border-[#00C853]/40 text-white font-bold text-sm px-8 py-4 rounded-xl hover:bg-white/[0.08] backdrop-blur-md transition-all duration-300"
                   >
                     <span className="w-6 h-6 flex items-center justify-center rounded-full bg-[#00C853]/10 border border-[#00C853]/20 group-hover:bg-[#00C853]/20 transition-colors">

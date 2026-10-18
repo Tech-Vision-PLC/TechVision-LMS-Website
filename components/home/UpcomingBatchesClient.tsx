@@ -586,7 +586,7 @@ export function UpcomingBatchesClient({
 
             <div className="mt-7 flex flex-wrap gap-3">
               <Link
-                href="https://learn.techvision.edu.et/batch-application/new"
+                href="/student-application"
                 className="
                   flex
                   items-center

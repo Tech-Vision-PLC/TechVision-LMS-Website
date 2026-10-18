@@ -27,7 +27,7 @@ const offerings = [
       { icon: CreditCard, label: 'Tuition', value: '4,000 ETB · One-time payment' },
     ],
     cta: 'Enroll in In-Person Class',
-    href: 'https://learn.techvision.edu.et/batch-application/new',
+    href: '/student-application',
   },
   {
     id: 'online',
@@ -50,7 +50,7 @@ const offerings = [
       { icon: Tag,      label: 'Tuition',  value: '3,000 ETB/mo  (20% off upfront)' },
     ],
     cta: 'Claim 20% Discount & Enroll',
-    href: 'https://learn.techvision.edu.et/batch-application/new',
+    href: '/student-application',
   },
 ]
 
@@ -210,7 +210,7 @@ export function CourseOfferings() {
           className="mt-8 text-center"
         >
           <Link
-            href="https://learn.techvision.edu.et/batch-application/new"
+            href="/student-application"
             className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.04] px-6 py-3 text-sm font-bold text-white backdrop-blur-sm transition-all duration-300 hover:border-[#00C853]/30 hover:bg-white/[0.08]"
           >
             Apply Now to All Batches — አሁኑኑ ይመዝገቡ
