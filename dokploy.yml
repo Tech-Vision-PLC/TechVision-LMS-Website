@@ -3,8 +3,8 @@ version: "3.8"
 services:
   nextjs-standalone:
     build: .
-    image: ghcr.io/mehariwamlake/lms-nextjs:latest
-    container_name: nextjs-app-container
+    image: ghcr.io/mehariwamlake/homelms-nextjs:latest
+    container_name: lmshome-app-container
     deploy:
       replicas: 1
       labels:
@@ -22,11 +22,11 @@ services:
         - traefik.http.routers.nextjs-https.tls.certresolver=letsencrypt
 
         # Next.js port
-        - traefik.http.services.nextjs.loadbalancer.server.port=3000
+        - traefik.http.services.nextjs.loadbalancer.server.port=3009
 
     environment:
       NODE_ENV: production
-      PORT: 3000
+      PORT: 3009
 
     networks:
       - dokploy-network

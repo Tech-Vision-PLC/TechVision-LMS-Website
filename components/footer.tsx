@@ -32,11 +32,11 @@ const footerLinks = {
   Company: [
     {
       label: "About Us",
-      href: "/about",
+      href: "#",
     },
     {
       label: "Success Stories",
-      href: "/success-stories",
+      href: "#testimonials",
     },
     {
       label: "FAQ",

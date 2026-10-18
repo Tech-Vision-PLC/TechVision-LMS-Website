@@ -1,62 +1,37 @@
-import React from "react";
 import type { Metadata } from "next";
-import { Archivo, JetBrains_Mono } from "next/font/google";
-import { Analytics } from "@Vercel/analytics/next";
+import {Hanken_Grotesk,JetBrains_Mono} from "next/font/google"
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
+import { SiteLoader } from "@/components/SiteLoader";
 
-const archivo = Archivo({
+const hankenGrotesk = Hanken_Grotesk({
+  variable: "--font-hanken",
   subsets: ["latin"],
-  variable: "--font-archivo",
+  display: "swap",
 });
 
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
+const jetBrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains",
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "TechVision — Smart Digital Solutions for Modern Organizations",
-  description:
-    "TechVision builds cloud-based LMS, Education ERP, ERP, and HR Management systems that help schools, universities, and businesses run smarter. Local Ethiopian support.",
-  generator: "v0.app",
-  icons: {
-  icon: [
-    {
-      url: "/brand/techvision-light.svg",
-      media: "(prefers-color-scheme: light)",
-    },
-    {
-      url: "/brand/techvision-dark.svg",
-      media: "(prefers-color-scheme: dark)",
-    },
-  ],
-},
+  title: "Tech Vision",
+  description: "Project-based technology training, mentorship, and career-focused learning in Ethiopia.",
+  icons: { icon: "/brand/techvision-mark.svg" },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      lang="en"
-      suppressHydrationWarning
-      data-scroll-behavior="smooth"
-    >
-      <body
-        className={`${archivo.variable} ${jetbrainsMono.variable} font-sans antialiased`}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-          <Analytics />
-        </ThemeProvider>
+    <html lang="en" className="antialiased  ${hankenGrotesk.variable} ${jetBrainsMono.variable}" suppressHydrationWarning>
+      <body>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var m=localStorage.getItem('techvision-theme')||'system';var d=m==='dark'||(m==='system'&&window.matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.dataset.theme=d?'dark':'light';document.documentElement.dataset.themeMode=m;document.documentElement.style.colorScheme=d?'dark':'light';}catch(e){}})();`,
+          }}
+        />
+        <SiteLoader />
+        {children}
       </body>
     </html>
   );
