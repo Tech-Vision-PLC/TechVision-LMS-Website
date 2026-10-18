@@ -4,6 +4,7 @@ import { LandingHero } from '@/components/home/LandingHero'
 import { LightTrustBar } from '@/components/home/LightTrustBar'
 import { SuccessFeatures } from '@/components/home/SuccessFeatures'
 import { UpcomingBatches } from "@/components/home/UpcomingBatches"
+import { TechStack } from '@/components/home/TechStack'
 const faqs = [
   {
     q: 'Do I need prior coding experience?',
@@ -38,7 +39,9 @@ export default function Home() {
       <main className="bg-white text-[#0c120f]">
         <LandingHero />
         <LightTrustBar />
-        <UpcomingBatches/>
+        <UpcomingBatches />
+        <TechStack />
+
         <SuccessFeatures />
 
         <section id="faq" className="mx-auto max-w-4xl px-6 py-24">
