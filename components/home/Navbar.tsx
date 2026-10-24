@@ -49,6 +49,10 @@ export function Navbar({ hideCourses = false }: { hideCourses?: boolean }) {
           <Link href="/contest" className={navLink}>
             Contest
           </Link>
+
+          <Link href="/become-an-instructor" className={navLink}>
+            Instructor Application
+          </Link>
      
         </nav>
         <div className="hidden items-center gap-3 md:flex">
